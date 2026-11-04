@@ -14,6 +14,15 @@
   .qr { display: flex; flex-wrap: wrap; gap: 16px; }
   .qr div { flex: 1 1 200px; text-align: center; font-size: .9rem; }
   .qr img { width: 160px; height: 160px; }
+  .due { font-size: 1.15rem; font-weight: bold; color: #d32f2f; }
+  .cal { border-collapse: collapse; width: 100%; max-width: 420px; table-layout: fixed; text-align: center; }
+  .cal caption { font-weight: bold; margin-bottom: 6px; }
+  .cal th, .cal td { border: 1px solid #ddd; padding: 6px 2px; height: 2.6em; vertical-align: top; }
+  .cal th { background: #f5f5f5; height: auto; }
+  .cal .sun { color: #d32f2f; } .cal .sat { color: #1565c0; }
+  .cal small { display: block; font-size: .65rem; line-height: 1.2; }
+  .cal .ev { background: #eef3fd; }
+  .cal .dl { background: #d32f2f; color: #fff; font-weight: bold; }
 </style>
 </head>
 <body>
@@ -35,12 +44,25 @@
     <a href="files/2100%20김00%20미적분2%20과정형2(미분방정식).hwpx" download>HWPX</a></li>
 </ul>
 
-<h2>2. 제출</h2>
+<h2>2. 제출 기한</h2>
+<p class="due">2026년 11월 25일(수) 밤 11시 59분까지</p>
+<table class="cal">
+  <caption>2026년 11월</caption>
+  <tr><th class="sun">일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th class="sat">토</th></tr>
+  <tr><td class="sun">1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td class="sat">7</td></tr>
+  <tr><td class="sun">8</td><td>9</td><td>10</td><td class="ev">11<small>주제 선정</small></td><td>12</td><td>13</td><td class="sat">14</td></tr>
+  <tr><td class="sun">15</td><td>16</td><td>17</td><td class="ev">18<small>피드백</small></td><td>19</td><td>20</td><td class="sat">21</td></tr>
+  <tr><td class="sun">22</td><td>23</td><td>24</td><td class="dl">25<small>제출 마감</small></td><td>26</td><td>27</td><td class="sat">28</td></tr>
+  <tr><td class="sun">29</td><td>30</td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+<p><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=%EB%AF%B8%EC%A0%81%EB%B6%84%E2%85%A1%20%EA%B3%BC%EC%A0%95%ED%98%95%ED%8F%89%EA%B0%80%20%EC%A0%9C%EC%B6%9C%20%EB%A7%88%EA%B0%90&dates=20261125T235900/20261125T235900&ctz=Asia/Seoul&details=https%3A%2F%2Fsubject-f6940.web.app%2F">구글 캘린더에 마감일 추가</a></p>
+
+<h2>3. 제출</h2>
 <p><a class="submit" href="https://subject-f6940.web.app/">제출하러 가기</a><br>
 <a href="https://subject-f6940.web.app/">https://subject-f6940.web.app/</a><br>
 사용 방법: <a href="files/제출%20사이트%20사용%20방법.pdf">제출 사이트 사용 방법 (PDF)</a></p>
 
-<h2>3. 참고 영상 및 예시 자료</h2>
+<h2>4. 참고 영상 및 예시 자료</h2>
 <div class="qr">
   <div><img src="qr/qr_taylor_video.png" alt="테일러급수 참고영상 QR"><br><b>테일러급수(참고자료)</b><br>
     <a href="https://www.youtube.com/watch?v=YHl5jqL-yZA">https://www.youtube.com/watch?v=YHl5jqL-yZA</a></div>
